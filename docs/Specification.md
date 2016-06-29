@@ -64,7 +64,7 @@
 
 # 開発環境
 * Xcode 7.3.1
-* Swift 2.5
-* RxSwift 2.3.1
+* Swift 2.2
+* RxSwift 2.5
 * Realm Swift 1.0.0
 * CocoaPods 0.3.9
