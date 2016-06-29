@@ -7,4 +7,5 @@
 * 7/1〜 実装、テスト
 
 # 開発環境構築
+* macOSのupdate（yosemite -> El Capitan）30-40min
 * Xcodeのupdate（7.2->7.3.1）
