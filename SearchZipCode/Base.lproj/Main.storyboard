@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--ホーム-->
+        <!--Home View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" sceneMemberID="viewController">
@@ -39,13 +39,13 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ホーム" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--カテゴリ-->
+        <!--Category View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="CategoryViewController" customModule="SearchZipCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,11 +79,11 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="カテゴリ" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="mostViewed" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="1150" y="362"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -98,15 +98,52 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="hpX-r2-GVN" kind="relationship" relationship="viewControllers" id="1dC-hv-eAe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--検索-->
+        <scene sceneID="wzy-ps-x0k">
+            <objects>
+                <viewController id="hpX-r2-GVN" userLabel="検索" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qqi-Sk-iym"/>
+                        <viewControllerLayoutGuide type="bottom" id="lZf-Ol-nCT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m0W-CF-4Zq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Search View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vmb-kG-VhI">
+                                <rect key="frame" x="221" y="279" width="158" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8T-fp-HY7">
+                                <rect key="frame" x="203" y="329" width="195" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="vmb-kG-VhI" secondAttribute="centerY" id="1Jp-vW-fO9"/>
+                            <constraint firstAttribute="centerX" secondItem="vmb-kG-VhI" secondAttribute="centerX" id="JBn-y7-abe"/>
+                            <constraint firstItem="S8T-fp-HY7" firstAttribute="top" secondItem="vmb-kG-VhI" secondAttribute="bottom" constant="8" symbolic="YES" id="cfa-Tz-jU4"/>
+                            <constraint firstItem="S8T-fp-HY7" firstAttribute="centerX" secondItem="vmb-kG-VhI" secondAttribute="centerX" id="mpQ-0R-Xjm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" systemItem="search" id="T8b-g2-1EI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciz-1y-QTr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="1058"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-    </resources>
 </document>

@@ -15,6 +15,7 @@
 		C810643B1D26AF0800A21C97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C81064391D26AF0800A21C97 /* LaunchScreen.storyboard */; };
 		C81064461D26AF0800A21C97 /* SearchZipCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81064451D26AF0800A21C97 /* SearchZipCodeTests.swift */; };
 		C81064511D26AF0800A21C97 /* SearchZipCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81064501D26AF0800A21C97 /* SearchZipCodeUITests.swift */; };
+		C810645F1D26B4A400A21C97 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810645E1D26B4A400A21C97 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C810644C1D26AF0800A21C97 /* SearchZipCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchZipCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81064501D26AF0800A21C97 /* SearchZipCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchZipCodeUITests.swift; sourceTree = "<group>"; };
 		C81064521D26AF0800A21C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C810645E1D26B4A400A21C97 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				C810642E1D26AF0800A21C97 /* AppDelegate.swift */,
 				C81064301D26AF0800A21C97 /* HomeViewController.swift */,
 				C81064321D26AF0800A21C97 /* CategoryViewController.swift */,
+				C810645E1D26B4A400A21C97 /* SearchViewController.swift */,
 				C81064341D26AF0800A21C97 /* Main.storyboard */,
 				C81064371D26AF0800A21C97 /* Assets.xcassets */,
 				C81064391D26AF0800A21C97 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				C81064331D26AF0800A21C97 /* CategoryViewController.swift in Sources */,
 				C810642F1D26AF0800A21C97 /* AppDelegate.swift in Sources */,
+				C810645F1D26B4A400A21C97 /* SearchViewController.swift in Sources */,
 				C81064311D26AF0800A21C97 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
